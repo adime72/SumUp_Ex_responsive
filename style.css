@@ -4,17 +4,24 @@ body {margin:3px;}
 .menu {
   overflow: hidden;
   background-color: #333;
+
 }
 
 .menu a {
-  float: left;
+  float: right;
   display: block;
   color: #f2f2f2;
-  text-align: center;
+  text-align: left;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-}
+  direction: left;
+  }
+
+
+  .menu a:first-child{
+      float: left;
+  }
 
 .menu a:hover {
   background-color: #ddd;
@@ -75,7 +82,7 @@ body {margin:3px;}
     .col-m-12 {width: 100%;}
   }
   
-  
+  /* PC second*/
   @media screen and (min-width:800px) {
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -93,6 +100,10 @@ body {margin:3px;}
   
   img {
     width: 100%;
+  }
+  button{
+      width: 100%;
+      border: none;
   }
   .row::after {
     content: "";
